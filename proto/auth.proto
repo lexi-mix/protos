@@ -10,7 +10,7 @@ option go_package = "github.com/lexi-mix/protos/gen/go/auth";
 
 
 // [START services]
-service AuthService {
+service Auth {
   rpc Login(LoginRequest) returns (LoginResponse);
 }
 // [END services]

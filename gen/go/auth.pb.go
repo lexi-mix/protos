@@ -134,8 +134,8 @@ const file_auth_proto_rawDesc = "" +
 	"\x05login\x18\x01 \x01(\tR\x05login\x12\x1a\n" +
 	"\bpassword\x18\x02 \x01(\tR\bpassword\"%\n" +
 	"\rLoginResponse\x12\x14\n" +
-	"\x05token\x18\x01 \x01(\tR\x05token2?\n" +
-	"\vAuthService\x120\n" +
+	"\x05token\x18\x01 \x01(\tR\x05token28\n" +
+	"\x04Auth\x120\n" +
 	"\x05Login\x12\x12.auth.LoginRequest\x1a\x13.auth.LoginResponseB(Z&github.com/lexi-mix/protos/gen/go/authb\x06proto3"
 
 var (
@@ -156,8 +156,8 @@ var file_auth_proto_goTypes = []any{
 	(*LoginResponse)(nil), // 1: auth.LoginResponse
 }
 var file_auth_proto_depIdxs = []int32{
-	0, // 0: auth.AuthService.Login:input_type -> auth.LoginRequest
-	1, // 1: auth.AuthService.Login:output_type -> auth.LoginResponse
+	0, // 0: auth.Auth.Login:input_type -> auth.LoginRequest
+	1, // 1: auth.Auth.Login:output_type -> auth.LoginResponse
 	1, // [1:2] is the sub-list for method output_type
 	0, // [0:1] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
