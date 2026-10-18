@@ -28,7 +28,7 @@ const (
 type LoginRequest struct {
 	state protoimpl.MessageState `protogen:"open.v1"`
 	// The field represents a unique login for the account.
-	Login string `protobuf:"bytes,1,opt,name=login,proto3" json:"login,omitempty"`
+	Email string `protobuf:"bytes,1,opt,name=email,proto3" json:"email,omitempty"`
 	// The field represents the account password. The minimum length is 8 characters.
 	Password      string `protobuf:"bytes,2,opt,name=password,proto3" json:"password,omitempty"`
 	unknownFields protoimpl.UnknownFields
@@ -65,9 +65,9 @@ func (*LoginRequest) Descriptor() ([]byte, []int) {
 	return file_auth_proto_rawDescGZIP(), []int{0}
 }
 
-func (x *LoginRequest) GetLogin() string {
+func (x *LoginRequest) GetEmail() string {
 	if x != nil {
-		return x.Login
+		return x.Email
 	}
 	return ""
 }
@@ -131,7 +131,7 @@ const file_auth_proto_rawDesc = "" +
 	"\n" +
 	"auth.proto\x12\x04auth\"@\n" +
 	"\fLoginRequest\x12\x14\n" +
-	"\x05login\x18\x01 \x01(\tR\x05login\x12\x1a\n" +
+	"\x05email\x18\x01 \x01(\tR\x05email\x12\x1a\n" +
 	"\bpassword\x18\x02 \x01(\tR\bpassword\"%\n" +
 	"\rLoginResponse\x12\x14\n" +
 	"\x05token\x18\x01 \x01(\tR\x05token28\n" +

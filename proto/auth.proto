@@ -20,7 +20,7 @@ service Auth {
 // LoginRequest represents a login request.
 message LoginRequest {
   // The field represents a unique login for the account.
-  string login = 1;
+  string email = 1;
 
   // The field represents the account password. The minimum length is 8 characters.
   string password = 2;
