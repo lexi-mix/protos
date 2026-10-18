@@ -1,0 +1,32 @@
+// [START declaration]
+syntax = "proto3";
+package profile;
+// [END declaration]
+
+
+// [START go_declaration]
+option go_package = "github.com/lexi-mix/protos/gen/go/profile";
+// [END go_declaration]
+
+
+// [START services]
+service Profile {
+  rpc Profile(ProfileRequest) returns (ProfileResponse);
+}
+// [END services]
+
+
+// [START messages]
+message ProfileRequest {
+  string id = 1;
+}
+
+message ProfileResponse {
+  string id = 1;
+  string name = 2;
+  string age = 3;
+}
+// [END messages]
+
+
+
